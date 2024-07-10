@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p>Your loan application is: <strong>{{ result }}</strong></p>
+        <p>Probability of Approval: {{ '%.2f' % probability }}%</p>
+        <a href="/">Make Another Prediction</a>
+    </div>
+</body>
+</html>
